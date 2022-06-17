@@ -1,0 +1,39 @@
+.pt-50 {
+    padding-top: 50px;
+}
+
+.mt-282 {
+    margin-top: 282px;
+}
+
+.mb-110 {
+    margin-bottom: 110px;
+}
+
+.mb-116 {
+    margin-bottom: 116px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn:focus {
+    background: none;
+    border: 0;
+    box-shadow: none;
+}
+
+.video_position {
+    position: absolute;
+    left: 54px;
+    bottom: 125px;
+}
+
+.mw-719 {
+    max-width: 719px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 80px;
+    color: #FDFDFB;
+}

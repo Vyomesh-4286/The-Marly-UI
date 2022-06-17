@@ -1,0 +1,21 @@
+.pt-224 {
+    padding-top: 224px;
+}
+
+@media (min-width:768px) {
+    .md\:pe-3 {
+        padding-right: 16px;
+    }
+}
+
+.ps-117 {
+    padding-left: 117px;
+}
+
+.pt-120 {
+    padding-top: 120px;
+}
+
+.mw-471 {
+    max-width: 471px;
+}

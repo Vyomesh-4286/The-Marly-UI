@@ -1,0 +1,33 @@
+.py-77 {
+    padding-top: 77.5px;
+    padding-top: 77.5px;
+}
+
+.px-66 {
+    padding-left: 66px;
+    padding-right: 66px;
+}
+
+.booking h1 {
+    line-height: 80px;
+}
+
+.h-1 {
+    height: 1.5px !important;
+}
+
+.h-2 {
+    height: 2px !important;
+}
+
+#form_heading {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 80px;
+    color: #3A3A3A;
+}
+
+#back_btn {
+    background-color: rgba(229, 229, 229, 0.5)
+}

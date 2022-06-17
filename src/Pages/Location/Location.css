@@ -1,0 +1,24 @@
+.mw-546 {
+    max-width: 546px;
+}
+
+.intpoint_marly {
+    padding-top: 228px;
+    padding-left: 135px;
+    padding-right: 218px;
+}
+
+.intpoint_marly p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #838383;
+}
+
+#color-FAF8F4{
+    background: #FAF8F4;
+}
+
+#color-FAF8F4 .swiper-pagination-fraction{
+    background: #FAF8F4;
+}

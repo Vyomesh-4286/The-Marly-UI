@@ -1,0 +1,126 @@
+.offcanvas-header {
+    padding: 0;
+}
+
+.offcanvasone .btn-close {
+    position: absolute;
+    top: 79px;
+    left: 83px;
+}
+
+.offcanvasone .btn-close {
+    background: url('../../../public/image/Header/Offcanvas/svg/Close_button.svg') !important;
+    width: 25px;
+    height: 24px;
+}
+
+#color-F7F7F7 {
+    background: #F7F7F7;
+}
+
+.mx-102 {
+    margin-left: 102px;
+    margin-right: 102px;
+}
+
+.my-72 {
+    margin-top: 72px;
+    margin-bottom: 72px;
+}
+
+.mt-132 {
+    margin-top: 132px;
+}
+
+.mb-114 {
+    margin-bottom: 114px;
+}
+
+.ms-87 {
+    margin-left: 87px;
+}
+
+.mt-132 ul li {
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #3A3A3A;
+
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.mb-69 {
+    margin-bottom: 69px;
+}
+
+/* OffCanvasTwo */
+
+.offcanvastwo .btn-close, #close_btn {
+    position: absolute;
+    top: 79px;
+    right: 79px !important;
+}
+
+.offcanvastwo .btn-close {
+    background: none;
+    width: 126px;
+    height: 20px;
+}
+
+#close_btn{
+    background-color: rgba(229, 229, 229, 0.5) !important;
+    width: 126px;
+    margin-top: -8px;
+}
+
+.offcanvas_booking_btn{
+    position: absolute !important;
+    top: 78px;
+    right: 78px;
+}
+
+.mt-188 {
+    margin-top: 188px;
+}
+
+.me-79 {
+    margin-right: 79px;
+}
+
+.mw-449 {
+    max-width: 449px !important;
+}
+
+.mw-449 h1 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: right;
+    color: #3A3A3A;
+}
+
+.mw-449 p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #838383;
+
+    max-width: 327px;
+}
+
+.mw-449 hr {
+    width: 449px;
+}
+
+.mb-76{
+    margin-bottom: 76px;
+}

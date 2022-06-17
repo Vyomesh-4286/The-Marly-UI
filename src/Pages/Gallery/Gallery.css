@@ -1,0 +1,23 @@
+.gallery img {
+    height: 625px;
+}
+
+.gallery .gallery {
+    display: none !important;
+}
+
+.mw-768 {
+    max-width: 768px;
+}
+
+.mw-768 p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #838383;
+}
+
+.mw-622 {
+    max-width: 622px;
+}

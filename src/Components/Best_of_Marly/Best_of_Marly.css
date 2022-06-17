@@ -1,0 +1,50 @@
+@media (min-width:768px) {
+    .md\:px-137 {
+        padding-left: 137px;
+        padding-right: 137px;
+    }
+}
+
+.text-align {
+    text-align: center;
+}
+
+.mt-109 {
+    margin-top: 109px;
+}
+
+.mb-82 {
+    margin-bottom: 82px;
+}
+
+.mb-135 {
+    padding-bottom: 135px;
+}
+
+#mw-299 {
+    max-width: 299px;
+}
+
+#mw-239 {
+    max-width: 239px;
+}
+
+#mw-299 h1,
+#mw-239 h1 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 26px;
+    text-align: center;
+    color: #3A3A3A;
+}
+
+#mw-299 p,
+#mw-239 p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #838383;
+}
