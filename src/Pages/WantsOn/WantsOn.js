@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 import Footer from '../../Components/Footer/Footer'
 import Header from '../../Components/Header/Header'
 import ImgGrid from '../../Components/ImgGrid/ImgGrid'
-import Zigzagimgright from '../../Components/Zigzagimg/Zigzagimgright'
 import Best_of_Marly from '../../Components/Best_of_Marly/Best_of_Marly'
 import './WantsOn.css';
 import SectionHero from '../../Components/SectionHero/SectionHero'
+import Zigzagimgleft from '../../Components/Zigzagimg/Zigzagimgleft'
 
 const WantsOn = () => {
     return (
@@ -18,14 +18,13 @@ const WantsOn = () => {
                     title={'What’s On'}
                     descrption={"Discover the latest events happening at The Marly and in Cape Town"}
                 />
-                <div className="mb-200">
-                    <Zigzagimgright
-                        title={'Your guide to Cape Town’s most anticipated events'}
-                        descrption={"With the Marly Boutique Hotel as your home base, discover Cape Town’s exciting social calendar on your next visit to the Mother City. Here are a few of our favourite events to look forward to this season."}
-                        btn1={'MAKE A BOOKING'}
-                        image={"../../image/Wants_On Page/Marly_Wants_On_1.jpg"}
-                    />
-                </div>
+                <Zigzagimgleft
+                    title={'Your guide to Cape Town’s most anticipated events'}
+                    descrption={"With the Marly Boutique Hotel as your home base, discover Cape Town’s exciting social calendar on your next visit to the Mother City. Here are a few of our favourite events to look forward to this season."}
+                    btn1={'MAKE A BOOKING'}
+                    image={"../../image/Wants_On Page/Marly_Wants_On_1.jpg"}
+                    isOrder={true}
+                />
                 <section className="common carousel-padding">
                     <div className="row">
                         <ImgGrid

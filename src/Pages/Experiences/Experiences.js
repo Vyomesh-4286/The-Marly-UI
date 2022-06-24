@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 import Footer from '../../Components/Footer/Footer'
 import Header from '../../Components/Header/Header'
 import ImgGrid from '../../Components/ImgGrid/ImgGrid'
-import Zigzagimgright from '../../Components/Zigzagimg/Zigzagimgright'
 import Best_of_Marly from '../../Components/Best_of_Marly/Best_of_Marly'
 import Explore_rooms from '../../Components/Explore_rooms/Explore_rooms'
 import './Experiences.css';
 import SectionHero from '../../Components/SectionHero/SectionHero'
+import Zigzagimgleft from '../../Components/Zigzagimg/Zigzagimgleft'
 
 const Experiences = () => {
     return (
@@ -19,13 +19,14 @@ const Experiences = () => {
                     title={'Experiences at The Marly'}
                     descrption={"The Marly aims to provide our guests with experiences that make for a stay to be remembered."}
                 />
-                <Zigzagimgright
+                <Zigzagimgleft
                     title={"Welcome to the good life at The Marly"}
                     descrption={"A destination for the modern-day traveler, The Marly Boutique Hotel and Spa encapsulates Cape Town living at its finest. Uniquely curated to satisfy all the senses, our in-house experiences match the high standards of our exceptional location and city."}
                     btn1={'MAKE A BOOKING'}
                     image={"../../image/Experiences Page/Marly_Experiences_1.jpg"}
+                    isOrder={true}
                 />
-                <section className="common carousel-padding">
+                <section className="common carousel-padding pb-0">
                     <div className="row">
                         <ImgGrid
                             image={"../../image/Experiences Page/Marly_Experiences_Tab_1.jpg"}

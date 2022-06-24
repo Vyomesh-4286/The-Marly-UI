@@ -3,10 +3,10 @@ import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import Footer from '../../Components/Footer/Footer'
 import Header from '../../Components/Header/Header'
 import LogoGrid from '../../Components/LogoGrid/LogoGrid'
-import Zigzagimgright from '../../Components/Zigzagimg/Zigzagimgright'
 import Best_of_Marly from '../../Components/Best_of_Marly/Best_of_Marly'
 import './Press_and_Awards.css';
 import SectionHero from '../../Components/SectionHero/SectionHero'
+import Zigzagimgleft from '../../Components/Zigzagimg/Zigzagimgleft'
 
 const Press_and_Awards = () => {
   return (
@@ -18,11 +18,12 @@ const Press_and_Awards = () => {
           title={'Media + Awards'}
           descrption={"We are proud to showcase The Marly’s prestigious awards and press features."}
         />
-        <Zigzagimgright
+        <Zigzagimgleft
           title={'A boutique hotel boasting international recognition'}
           descrption={"It comes as no surprise that The Marly Boutique Hotel & Spa has caught the attention of seasoned international travelers and local travel experts alike. Our unmatched location, paired with the highest standards of hospitality excellence has awarded us recognition as one of the best boutique hotels in Camps Bay."}
           btn1={'Contact Us'}
           image={"../../image/Press & Awards Page/Marly_Press&Awards_1.jpg"}
+          isOrder={true}
         />
         <section id='pt-312' className='common carousel-padding mt-0'>
           <div className="row">

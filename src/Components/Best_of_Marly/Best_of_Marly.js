@@ -16,7 +16,7 @@ const Best_of_Marly = () => {
                                     <h1 className='pb-4'>Location</h1>
                                     <p className='m-0'>Located in sought-after Camps Bay, The Marly lies only seven minutes from Cape Town City Centre.</p>
                                     <div className='pt-3 d-flex justify-content-center'>
-                                        <Link to="/" exact><div className='border rounded-pill btn manu_title py-2 px-3 text-dark me-1'>Explore</div></Link>
+                                        <Link to="/location" exact><div className='border rounded-pill btn manu_title py-2 px-3 text-dark me-1'>Explore</div></Link>
                                     </div>
                                 </div>
                             </div>
@@ -30,7 +30,7 @@ const Best_of_Marly = () => {
                                     <h1 className='pb-4'>Experiences</h1>
                                     <p className='m-0'>Stay in luxury, eat whole-heartedly and unwind in tranquility at The Marly.</p>
                                     <div className='pt-3 d-flex justify-content-center'>
-                                        <Link to="/" exact><div className='border rounded-pill btn manu_title py-2 px-3 text-dark me-1'>Explore</div></Link>
+                                        <Link to="/experiences" exact><div className='border rounded-pill btn manu_title py-2 px-3 text-dark me-1'>Explore</div></Link>
                                     </div>
                                 </div>
                             </div>
@@ -44,7 +44,7 @@ const Best_of_Marly = () => {
                                     <h1 className='pb-4'>Promotions</h1>
                                     <p className='m-0'>Discover our special offers for every occasion, season and traveler.</p>
                                     <div className='pt-3 d-flex justify-content-center'>
-                                        <Link to="/" exact><div className='border rounded-pill btn manu_title py-2 px-3 text-dark me-1'>Explore</div></Link>
+                                        <Link to="/promotions" exact><div className='border rounded-pill btn manu_title py-2 px-3 text-dark me-1'>Explore</div></Link>
                                     </div>
                                 </div>
                             </div>

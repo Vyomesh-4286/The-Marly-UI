@@ -13,7 +13,16 @@
     line-height: 20px;
     color: #838383;
 }
-.pt-92{
+
+@media (min-width:1024px) {
+    .view_btn_position {
+        position: absolute;
+        top: 41px;
+        right: 135px;
+    }
+}
+
+.pt-92 {
     padding-top: 92px;
 }
 

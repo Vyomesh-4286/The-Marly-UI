@@ -8,30 +8,61 @@ import OffcanvasTwo from './OffcanvasTwo';
 
 const OffcanvasOne = ({ name, ...props }) => {
 
-  const [show, setShow] = useState(false);
+  const [show2, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow2 = () => setShow(true);
+  const handleClose2 = () => setShow(false);
 
   return (
-    <div>
-      <div id='color-F7F7F7' className="row">
-        <div className="col-md-5 col-12">
-          <div className='mt-132 mb-114 ms-87'>
-            <div className='pb-4 pt-3'>
-              <Link to="/" exact><img src="../../image/Header/Offcanvas/svg/Marly_Logo.svg" alt="" /></Link>
+    <div id='color-F7F7F7'>
+      <section className='common mt-0'>
+        <div className="row">
+          <div className="col-md-5 col-12">
+            <div className='content_spacing'>
+              <div className='md:mb-5 md:pb-4 mb-5 pb-3 show_img'>
+                <Link to="/" exact><img src="../../image/Header/Offcanvas/svg/Marly_Logo.svg" alt="" /></Link>
+              </div>
+              <ul className='p-0 show_link'>
+                <li><Link className='text-dark' to="/stay" exact>Stay</Link></li>
+                <li><Link className='text-dark mx-5' to="/spa" exact>Spa</Link></li>
+                <li><Link className='text-dark' to="/eat" exact>Eat</Link></li>
+              </ul>
+              <ul className='p-0 md:mb-5 md:pb-4 mb-5 pb-3 md:text-center'>
+                <li className='show_link'><Link to="/ourstory" exact>Our Story</Link></li>
+                <li><Link to="/facilities" exact>Facilities</Link></li>
+                <li><Link to="/experiences" exact>Experiences</Link></li>
+                <li><Link to="/location" exact>Location</Link></li>
+                <li><Link to="/wantson" exact>What’s On</Link></li>
+                <li><Link to="/promotions" exact>Offers</Link></li>
+                <li><Link to="/blog" exact>Blog</Link></li>
+                <li><Link to="/gallery" exact>Gallery</Link></li>
+                <li><Link to="/contactus" exact>CONTACT</Link></li>
+              </ul>
+              <div className='show_link mb-5 pb-1'>
+                <div variant="primary" onClick={handleShow2} placement="bottom" className='bg-secondary bg-opacity-25 border rounded-pill btn manu_title py-2 px-3 text-dark'>Make A Booking</div>
+                <Offcanvas show={show2} className="w-100 offcanvastwo" onHide={handleClose2} {...props}>
+                  <Offcanvas.Header className='p-0' closeButton>
+                    <Button id="close_btn" className='rounded-pill btn manu_title py-2 px-3 text-dark me-1' data-bs-dismiss="offcanvas" aria-label="Close">Back</Button>
+                  </Offcanvas.Header>
+                  <Offcanvas.Body className='p-0'>
+                    <OffcanvasTwo />
+                  </Offcanvas.Body>
+                </Offcanvas>
+              </div>
+              <div className='hide_nav'>
+                <Link to="/contactus" exact><div className='border rounded-pill btn manu_title py-2 px-3 mb-2 text-dark'>GET IN TOUCH</div></Link>
+              </div>
             </div>
-            <ul className='p-0 pt-2 mb-69'>
-              <Link to="/facilities" exact><li className='mt-0'>Facilities</li></Link>
-              <Link to="/location" exact><li>Location</li></Link>
-              <Link to="/wantson" exact><li>What’s On</li></Link>
-              <Link to="/promotions" exact><li>Promotions</li></Link>
-              <Link to="/blog" exact><li>Blog</li></Link>
-              <Link to="/gallery" exact><li>Gallery</li></Link>
-              <Link to="/contactus" exact><li>CONTACT</li></Link>
+          </div>
+          <div className="hide_nav position-relative col-md-7 col-12 bg_offcancastwo justify-content-center align-content-center flex-wrap">
+            <ul className='p-0 nav_menu_offcanvas_positon'>
+              <li className='mt-0'><Link to="/stay" exact>Stay</Link></li>
+              <li><Link to="/spa" exact>Spa</Link></li>
+              <li><Link to="/eat" exact>Eat</Link></li>
+              <li><Link to="/ourstory" exact>Our Story</Link></li>
             </ul>
-            <div variant="primary" onClick={handleShow} placement="bottom" className='border rounded-pill btn manu_title py-2 px-3 text-dark'>GET IN TOUCH</div>
-            <Offcanvas show={show} className="w-100 offcanvastwo" onHide={handleClose} {...props}>
+            <div variant="primary" onClick={handleShow2} placement="bottom" id='contact_us' className='offcanvas_booking_btn rounded-pill btn manu_title py-2 px-3 text-white'>Make A Booking</div>
+            <Offcanvas show={show2} className="w-100 offcanvastwo" onHide={handleClose2} {...props}>
               <Offcanvas.Header className='p-0' closeButton>
                 <Button id="close_btn" className='rounded-pill btn manu_title py-2 px-3 text-dark me-1' data-bs-dismiss="offcanvas" aria-label="Close">Back</Button>
               </Offcanvas.Header>
@@ -41,11 +72,7 @@ const OffcanvasOne = ({ name, ...props }) => {
             </Offcanvas>
           </div>
         </div>
-        <div className="col-md-7 col-12 px-0">
-          <img className='w-100 vh-100' src="../../image/Header/Offcanvas/OffcanvasOne.jpg" alt="" />
-          <Link to="/bookingpage" exact><div id='contact_us' className='offcanvas_booking_btn rounded-pill btn manu_title py-2 px-3 text-white'>Make A Booking</div></Link>
-        </div>
-      </div>
+      </section>
     </div>
   )
 }

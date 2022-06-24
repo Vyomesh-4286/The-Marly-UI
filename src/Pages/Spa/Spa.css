@@ -11,11 +11,17 @@
     justify-content: end;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 200px;
+    padding-bottom: 72px;
 }
 
 .mt-135 .carousel-indicators button {
     width: 3px;
     background-color: #000;
+}
+
+.mt-135 .carousel-control-next, .mt-135 .carousel-control-prev{
+    display: none;
 }
 
 .mw-770 {

@@ -127,6 +127,10 @@
         padding-right: 96px;
         padding-bottom: 89px;
     }
+    .md\:my-auto{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 }
 
 @media (max-width:767.98px) {

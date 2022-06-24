@@ -1,10 +1,29 @@
-.pt-224 {
-    padding-top: 224px;
+@media (max-width:767.98px) {
+    .md\:mt-4{
+        margin-top: 1.5rem;
+    }
+
+    .md\:m-5{
+        margin: 3rem;
+    }
 }
 
 @media (min-width:768px) {
     .md\:pe-3 {
         padding-right: 16px;
+    }
+
+    .md\:mx-4{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .pt-224 {
+        padding-top: 224px;
+    }
+
+    .md\:mw-471 {
+        max-width: 471px;
     }
 }
 
@@ -14,8 +33,4 @@
 
 .pt-120 {
     padding-top: 120px;
-}
-
-.mw-471 {
-    max-width: 471px;
 }

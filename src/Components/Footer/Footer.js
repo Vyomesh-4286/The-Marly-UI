@@ -11,6 +11,19 @@ import { Navigation } from "swiper";
 import './Footer.css';
 
 function Footer() {
+
+  const Callto = ({ phone, children }) => {
+    return <a href={`tel:${phone}`}>{children}</a>;
+  };
+
+  const Mailto = ({ email, subject = '', body = '', children }) => {
+    let params = subject || body ? '?' : '';
+    if (subject) params += `subject=${encodeURIComponent(subject)}`;
+    if (body) params += `${subject ? '&' : ''}body=${encodeURIComponent(body)}`;
+
+    return <a href={`mailto:${email}${params}`}>{children}</a>;
+  };
+
   return (
     <div>
       <footer>
@@ -81,22 +94,30 @@ function Footer() {
             <Accordion className='d-flex justify-content-center'>
               <Accordion.Item eventKey="0">
                 <Accordion.Header className='d-flex justify-content-center'>
-                  <h2 id='' className='text-center pt-5 text-white m-0 pe-3'>Sign up to our special offers and promotions</h2>
+                  <h2 id='' className='font-15 text-center pt-5 text-white m-0 pe-3'>Sign up to our special offers and promotions</h2>
                 </Accordion.Header>
                 <Accordion.Body>
                   <form action="" className='py-5'>
                     <div className='d-sm-flex justify-content-center pt-4'>
-                      <input type="text" required placeholder='Name' className='footer_form col-sm-3 col-12 sm:text-center' />
-                      <input type="text" required placeholder='Surname' className='footer_form col-sm-3 col-12 sm:mx-5 my-40 sm:text-center' />
-                      <input type="email" required placeholder='Email address' className='footer_form col-sm-3 col-12 sm:me-5 sm:text-center' />
-                      <input type="submit" value="SIGN UP" className='footer_manu_title rounded-pill footer_form_submit col-sm-3 col-12 sm:ms-4 my-40 mx-60' />
+                      <div>
+                        <input type="text" required placeholder='Name' className='w-118 footer_form col-12 sm:text-center' />
+                      </div>
+                      <div className='sm:mx-5'>
+                        <input type="text" required placeholder='Surname' className='w-118 footer_form col-12 my-40 sm:text-center' />
+                      </div>
+                      <div className='sm:me-5'>
+                        <input type="email" required placeholder='Email address' className='w-264 footer_form col-12 sm:text-center' />
+                      </div>
+                      <div className='sm:ms-4'>
+                        <input type="submit" value="SIGN UP" className='footer_manu_title rounded-pill footer_form_submit col-12 my-40 mx-60' />
+                      </div>
                     </div>
                   </form>
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
-            <div className='my-5 pt-1'><hr className='text-light my-1' /></div>
-            <div className="row pt-3">
+            <div className='py-5 mt-1'><hr className='text-light my-1' /></div>
+            <div className="row pt-3 md:pb-104">
               <div className="col-md-6 col-12 d-sm-flex">
                 <div className="col-md-8 col-sm-8 col-12 sm:center">
                   <div>
@@ -115,7 +136,7 @@ function Footer() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4 col-sm-4 col-12 sm:center md:py-3 pt-5 md:mb-104">
+                <div className="col-md-4 col-sm-4 col-12 sm:center md:py-3 pt-5">
                   <ul className='ps-0 text-white'>
                     <li><Link to="/stay" exact>STAY</Link></li>
                     <li><Link to="/spa" exact>SPA</Link></li>
@@ -127,7 +148,7 @@ function Footer() {
                 </div>
               </div>
               <div className="col-md-6 col-12 md:pt-5 d-sm-flex">
-                <div className="col-md-4 col-sm-4 col-12 sm:center md:py-3">
+                <div className="col-md-4 col-sm-4 col-12 sm:center md:py-3 sm:pb-5">
                   <ul className='ps-0 text-white'>
                     <li><Link to="/location" exact>Location</Link></li>
                     <li><Link to="/wantson" exact>What’s On</Link></li>
@@ -136,14 +157,14 @@ function Footer() {
                     <li><Link to="/gallery" exact>Gallery</Link></li>
                   </ul>
                 </div>
-                <div className="col-md-8 col-sm-8 col-12 sm:center md:py-3 d-flex justify-content-center">
+                <div className="col-md-8 col-sm-8 col-12 sm:center md:py-3 d-flex justify-content-center sm:pb-5">
                   <div>
                     <div id='contact_us' className='rounded-pill btn mb-4 px-44'>
                       <div className='manu_title py-1 ps-1 text-white'><Link to="/contactus" exact>Contact us</Link></div>
                     </div>
                     <div id='contact_info' className='ms-2 ps-1'>
-                      <a href="tel:+27 (0) 21 437 1287"><p className='m-0'>tel: +27 (0) 21 437 1287</p></a>
-                      <a href="mailto:dm@themarly.co.za"><p className='m-0'>email: dm@themarly.co.za</p></a>
+                      <Callto phone="+27 (0) 21 437 1287"><p className='m-0'>tel: +27 (0) 21 437 1287</p></Callto>
+                      <Mailto email="dm@themarly.co.za" subject="Hello & Welcome" body="Hello world!"><p className='m-0'>email: dm@themarly.co.za</p></Mailto>
                     </div>
                   </div>
                 </div>

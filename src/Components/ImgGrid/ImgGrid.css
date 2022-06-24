@@ -1,9 +1,7 @@
-.mb-165 {
-    margin-bottom: 165px;
-}
-
-.mb-4{
-    margin-bottom: 24px !important;
+@media (min-width:768px) {
+    .mb\:mb-165 {
+        margin-bottom: 165px !important;
+    }
 }
 
 .imggrid h2 {
@@ -42,19 +40,31 @@
 }
 
 .mw-474 {
-    max-width: 474px;
+    max-width: 474px !important;
 }
 
 .mw-502 {
-    max-width: 502px;
+    max-width: 502px !important;
 }
 
 .mw-559 {
-    max-width: 559px;
+    max-width: 559px !important;
 }
 
 .mw-535 {
-    max-width: 535px;
+    max-width: 535px !important;
+}
+
+.mw-430 {
+    max-width: 430px !important;
+}
+
+.mw-517 {
+    max-width: 517px !important;
+}
+
+.mw-459 {
+    max-width: 459px !important;
 }
 
 .mb-0 {

@@ -138,7 +138,7 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
         <Form.Group className="row">
           <Form.Group className="col-sm-6 col-12 bg-white" disabled></Form.Group>
           <Form.Group className="col-sm-6 col-12 d-flex justify-content-end">
-            <Button id="btn_position" className='border rounded-pill btn manu_title py-2 px-3 text-dark me-1' variant="primary" type="submit">Continue</Button>
+            <Button id="form_btn_position" className='form_next_btn rounded-pill btn manu_title py-2 px-3 text-dark me-1' variant="primary" type="submit">Continue</Button>
           </Form.Group>
         </Form.Group>
       </Form>

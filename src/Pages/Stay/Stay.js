@@ -6,7 +6,6 @@ import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import Best_of_Marly from '../../Components/Best_of_Marly/Best_of_Marly';
 import Zifzagleft from '../../Components/Zigzag/Zifzagleft';
-import Zifzagright from '../../Components/Zigzag/Zigzagright';
 import Zigzagimgleft from '../../Components/Zigzagimg/Zigzagimgleft';
 import './Stay.css';
 import SectionHero from '../../Components/SectionHero/SectionHero';
@@ -29,20 +28,22 @@ const Stay = () => {
                         className="mb-3 ps-138 border-0"
                     >
                         <Tab className='pt-80' eventKey="home" title="ALL">
-                            <div className="row mb-280 bg-white">
+                            <div className="row bg-white">
                                 <Zigzagimgleft
                                     image={"../../image/Stay Page/Marly_Stay_Tab_1.jpg"}
                                     title={'Studio Sea Facing Room'}
                                     descrption={"Make yourself at home in our 30m² Sea Facing Studio Rooms with uninterrupted ocean views and a cozy 10m² balcony. Expect a spacious bedroom with an en-suite bathroom complete with Smart TV, Marshall speaker, Nespresso coffee machine and minibar. "}
                                     btn1={'Explore'}
                                     btn2={'Book Your Stay'}
+                                    isSectionBtn={true}
                                 />
-                                <Zifzagright
+                                <Zifzagleft
                                     title={'Classic Sea Facing Room'}
                                     descrption={"Enjoy the comfort of our 35m² Classic Sea Facing Room featuring a spacious bedroom with lounge area, en-suite bathroom and a 10m² balcony with sea views. Equipped with Smart TV, Marshall speaker, Nespresso coffee machine and minibar."}
                                     btn1={'Explore'}
                                     btn2={'Book Your Stay'}
                                     image={"../../image/Stay Page/Marly_Stay_Tab_2.jpg"}
+                                    isOrder={true}
                                 />
                                 <Zifzagleft
                                     image={"../../image/Stay Page/Marly_Stay_Tab_3.jpg"}
@@ -51,12 +52,13 @@ const Stay = () => {
                                     btn1={'Explore'}
                                     btn2={'Book Your Stay'}
                                 />
-                                <Zifzagright
+                                <Zifzagleft
                                     title={'Superior Sea Facing Suite'}
                                     descrption={"Generously sized at 45m² - 54m²  with a 27m² balcony, the Superior Sea Facing Suites feature a spacious bedroom, lounge area, dining room table and en-suite bathroom with bath and shower. The balcony boasts endless sea views, an outdoor shower, dining table and sun loungers. All suites feature a Smart TV, Marshall speaker, Nespresso coffee machine and minibar."}
                                     btn1={'Explore'}
                                     btn2={'Book Your Stay'}
                                     image={"../../image/Stay Page/Marly_Stay_Tab_4.jpg"}
+                                    isOrder={true}
                                 />
                                 <Zifzagleft
                                     image={"../../image/Stay Page/Marly_Stay_Tab_5.jpg"}
@@ -68,7 +70,7 @@ const Stay = () => {
                             </div>
                         </Tab>
                         <Tab className='pt-80' eventKey="profile" title="SEA FACING">
-                            <div className="row mb-280 bg-white">
+                            <div className="row bg-white">
                                 <Zigzagimgleft
                                     image={"../../image/Stay Page/Marly_Stay_Tab_1.jpg"}
                                     title={'Studio Sea Facing Room'}
@@ -76,12 +78,13 @@ const Stay = () => {
                                     btn1={'Explore'}
                                     btn2={'Book Your Stay'}
                                 />
-                                <Zifzagright
+                                <Zifzagleft
                                     title={'Classic Sea Facing Room'}
                                     descrption={"Enjoy the comfort of our 35m² Classic Sea Facing Room featuring a spacious bedroom with lounge area, en-suite bathroom and a 10m² balcony with sea views. Equipped with Smart TV, Marshall speaker, Nespresso coffee machine and minibar."}
                                     btn1={'Explore'}
                                     btn2={'Book Your Stay'}
                                     image={"../../image/Stay Page/Marly_Stay_Tab_2.jpg"}
+                                    isOrder={true}
                                 />
                                 <Zifzagleft
                                     image={"../../image/Stay Page/Marly_Stay_Tab_3.jpg"}
@@ -90,12 +93,13 @@ const Stay = () => {
                                     btn1={'Explore'}
                                     btn2={'Book Your Stay'}
                                 />
-                                <Zifzagright
+                                <Zifzagleft
                                     title={'Superior Sea Facing Suite'}
                                     descrption={"Generously sized at 45m² - 54m²  with a 27m² balcony, the Superior Sea Facing Suites feature a spacious bedroom, lounge area, dining room table and en-suite bathroom with bath and shower. The balcony boasts endless sea views, an outdoor shower, dining table and sun loungers. All suites feature a Smart TV, Marshall speaker, Nespresso coffee machine and minibar."}
                                     btn1={'Explore'}
                                     btn2={'Book Your Stay'}
                                     image={"../../image/Stay Page/Marly_Stay_Tab_4.jpg"}
+                                    isOrder={true}
                                 />
                                 <Zifzagleft
                                     image={"../../image/Stay Page/Marly_Stay_Tab_5.jpg"}
@@ -107,7 +111,7 @@ const Stay = () => {
                             </div>
                         </Tab>
                         <Tab className='pt-80' eventKey="contact" title="MOUNTAIN FACING">
-                            <div className="row mb-280 bg-white">
+                            <div className="row bg-white">
                                 <Zigzagimgleft
                                     image={"../../image/Stay Page/Marly_Stay_Tab_1.jpg"}
                                     title={'Studio Sea Facing Room'}
@@ -115,12 +119,13 @@ const Stay = () => {
                                     btn1={'Explore'}
                                     btn2={'Book Your Stay'}
                                 />
-                                <Zifzagright
+                                <Zifzagleft
                                     title={'Classic Sea Facing Room'}
                                     descrption={"Enjoy the comfort of our 35m² Classic Sea Facing Room featuring a spacious bedroom with lounge area, en-suite bathroom and a 10m² balcony with sea views. Equipped with Smart TV, Marshall speaker, Nespresso coffee machine and minibar."}
                                     btn1={'Explore'}
                                     btn2={'Book Your Stay'}
                                     image={"../../image/Stay Page/Marly_Stay_Tab_2.jpg"}
+                                    isOrder={true}
                                 />
                                 <Zifzagleft
                                     image={"../../image/Stay Page/Marly_Stay_Tab_3.jpg"}
@@ -129,12 +134,13 @@ const Stay = () => {
                                     btn1={'Explore'}
                                     btn2={'Book Your Stay'}
                                 />
-                                <Zifzagright
+                                <Zifzagleft
                                     title={'Superior Sea Facing Suite'}
                                     descrption={"Generously sized at 45m² - 54m²  with a 27m² balcony, the Superior Sea Facing Suites feature a spacious bedroom, lounge area, dining room table and en-suite bathroom with bath and shower. The balcony boasts endless sea views, an outdoor shower, dining table and sun loungers. All suites feature a Smart TV, Marshall speaker, Nespresso coffee machine and minibar."}
                                     btn1={'Explore'}
                                     btn2={'Book Your Stay'}
                                     image={"../../image/Stay Page/Marly_Stay_Tab_4.jpg"}
+                                    isOrder={true}
                                 />
                                 <Zifzagleft
                                     image={"../../image/Stay Page/Marly_Stay_Tab_5.jpg"}

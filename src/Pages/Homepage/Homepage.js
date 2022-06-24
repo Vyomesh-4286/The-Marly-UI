@@ -11,7 +11,6 @@ import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 import './Homepage.css';
-import Zigzagimgright from "../../Components/Zigzagimg/Zigzagimgright";
 import Zigzagimgleft from "../../Components/Zigzagimg/Zigzagimgleft";
 
 const Homepage = () => {
@@ -47,7 +46,7 @@ const Homepage = () => {
                 <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                   <Modal.Header className='p-0' closeButton />
                   <Modal.Body className='p-0'>
-                    <video className="w-100 vh-100"src="../../image/Home Page/video/The Marly, Cape Town, South Africa _ Safari365.mp4" autoPlay controls />
+                    <video className="w-100 vh-100" src="../../image/Home Page/video/The Marly, Cape Town, South Africa _ Safari365.mp4" autoPlay controls />
                   </Modal.Body>
                 </Modal>
               </div>
@@ -62,10 +61,10 @@ const Homepage = () => {
         />
         <section className='common'>
           <div id='color-FAF8F4' className='row'>
-            <div className="col-md-5 col-12 order-1 md:py-3 d-flex justify-content-center">
-              <div className='my-auto mw-417'>
-                <h1 className='pb-4 m-0 home_h1'>The most celebrated boutique hotel in Camps Bay</h1>
-                <p className='pb-4 m-0 home_p'>Elevated above the vibrant Camps Bay Beach strip, The Marly Boutique Hotel and Spa offers guests an urban hideaway that celebrates sophisticated design, beachfront living and five-star service. Set the tone of your stay with a sea-facing or mountain-facing suite and experience the essence of the Mother City.</p>
+            <div className="col-md-5 col-12 order-1 md:py-3 d-flex align-content-center flex-wrap md:ms-auto">
+              <div className='md:my-auto md:mx-4 md:m-5 ms-auto'>
+                <h1 className='pb-4 mw-501 m-0 home_h1'>The most celebrated boutique hotel in Camps Bay</h1>
+                <p className='pb-4 mw-391 m-0 home_p'>Elevated above the vibrant Camps Bay Beach strip, The Marly Boutique Hotel and Spa offers guests an urban hideaway that celebrates sophisticated design, beachfront living and five-star service. Set the tone of your stay with a sea-facing or mountain-facing suite and experience the essence of the Mother City.</p>
                 <div className='pt-4'>
                   <Link to="/" exact><div className='border rounded-pill btn manu_title py-2 px-3 text-dark'>DISCOVER OUR STORY</div></Link>
                 </div>
@@ -73,7 +72,26 @@ const Homepage = () => {
             </div>
             <div className="col-md-7 col-12 order-2">
               <div className='my-136'>
-                <Swiper slidesPerView={1.8} navigation={true} modules={[Navigation]} spaceBetween={62} loop={true} className="mySwiper ps-61">
+                <Swiper slidesPerView={1.8}
+                  breakpoints={{
+                    0: {
+                      slidesPerView: 1.2
+                    },
+                    768: {
+                      slidesPerView: 1.4
+                    },
+                    992: {
+                      slidesPerView: 1.6
+                    },
+                    1024: {
+                      slidesPerView: 1.8
+                    }
+                  }}
+                  navigation={true}
+                  modules={[Navigation]}
+                  spaceBetween={62}
+                  loop={true}
+                  className="mySwiper ps-61">
                   <SwiperSlide>
                     <div>
                       <img className='mb-3 w-100' src="../../image/Home Page/Main_Slider_1_SSF.jpg" height="489px" alt="Studio Sea Facing" />
@@ -198,11 +216,12 @@ const Homepage = () => {
           </div>
         </section>
         <div className="mb-200">
-          <Zigzagimgright
+          <Zigzagimgleft
             image={"../../image/Home Page/Main_TCT.jpg"}
             title={'Taste your way through Cape Town'}
             descrption={'Be spoilt for choice with our collection of restaurants, cafés and bars on The Marly’s doorstep. Curate your food journey to your liking - from fine-dining at Bilboa and cocktails at Chinchilla, to breakfast at La Belle Bistro and elegant dining at Paranga, the table is yours.'}
             btn1={'EXPLORE OUR RESTAURANTS'}
+            isOrder={true}
           />
         </div>
       </main>

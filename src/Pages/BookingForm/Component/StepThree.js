@@ -70,10 +70,10 @@ const StepThree = ({ nextStep, handleFormData, prevStep, values }) => {
                 </Form.Group>
                 <Form.Group className=" row">
                     <Form.Group className="col-sm-6 col-12 d-flex justify-content-start">
-                        <Button id="back_btn btn_position" className='rounded-pill btn manu_title py-2 px-3 text-dark me-1' variant="primary" onClick={prevStep}>Back</Button>
+                        <Button id="form_btn_position" className='form_back_btn rounded-pill btn manu_title py-2 px-3 text-dark me-1' variant="primary" onClick={prevStep}>Back</Button>
                     </Form.Group>
                     <Form.Group className="col-sm-6 col-12 d-flex justify-content-end">
-                        <Button id="btn_position" className='border rounded-pill btn manu_title py-2 px-3 text-dark me-1' variant="primary" type="submit">Continue</Button>
+                        <Button id="form_btn_position" className='form_next_btn rounded-pill btn manu_title py-2 px-3 text-dark me-1' variant="primary" type="submit">Continue</Button>
                     </Form.Group>
                 </Form.Group>
             </Form>

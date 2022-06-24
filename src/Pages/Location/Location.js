@@ -7,12 +7,11 @@ import { Pagination, Navigation } from "swiper";
 import { Link } from 'react-router-dom'
 import Footer from '../../Components/Footer/Footer'
 import Header from '../../Components/Header/Header'
-import Carousel from 'react-bootstrap/Carousel'
 import Best_of_Marly from '../../Components/Best_of_Marly/Best_of_Marly'
 import './Location.css';
-import Zigzagimgright from "../../Components/Zigzagimg/Zigzagimgright";
 import Zifzagleft from "../../Components/Zigzag/Zifzagleft";
 import SectionHero from "../../Components/SectionHero/SectionHero";
+import Zigzagimgleft from "../../Components/Zigzagimg/Zigzagimgleft";
 
 const Location = () => {
     return (
@@ -24,25 +23,14 @@ const Location = () => {
                     title={'Discover Camps Bay'}
                     descrption={"Experience a luxury stay like no other at one of South Africa’s   most premier and exclusive beaches"}
                 />
-                {/* <section className='marly_location'>
-                    <div className='d-flex justify-content-center'>
-                        <div className='container home_mian_content'>
-                            <div className='d-flex justify-content-center'>
-                                <h1 className=''>Discover Camps Bay</h1>
-                            </div>
-                            <div className='pt-3 d-flex justify-content-center'>
-                                <p id='mw-429' className='text-white text-center'>Experience a luxury stay like no other at one of South Africa’s   most premier and exclusive beaches</p>
-                            </div>
-                        </div>
-                    </div>
-                </section> */}
-                <Zigzagimgright
+                <Zigzagimgleft
                     title={'Experience Camps Bay'}
                     descrption={"Camps Bay, under the Twelve Apostles mountain range, is a chic suburb on the trendy Atlantic Seaboard. Sidewalk cafes, bars and a casual, relaxed atmosphere make this spot a beachcomber’s paradise; while the sparkling nightlife attracts the young and the young at heart. It’s a mere seven minutes from the centre of Cape Town, one of the world’s most beautiful cities."}
                     descrption1={"Camps Bay gives its name to one of the city’s largest and most picturesque beaches."}
                     image={"../../image/Location Page/Marly_Location_1.jpg"}
+                    isOrder={true}
                 />
-                <section className='common'>
+                <section className='common mt-0'>
                     <div id='color-FAF8F4' className='row'>
                         <div className="col-sm-12 pt-100">
                             <div className='carousel-padding  main_swiper'>
@@ -93,7 +81,7 @@ const Location = () => {
                         </div>
                     </div>
                 </section>
-                <section className='common intpoint_marly'>
+                <section className='common mt-0 intpoint_marly'>
                     <h1 className='mb-3'>Discover points of interest near The Marly</h1>
                     <p className='mw-546 mb-5'>The Marly will exceed all your expectations and is the ideal setting from where to explore all that the beautiful Mother City and surrounds have to offer.</p>
                     <div className="row ps-3 mt-3">

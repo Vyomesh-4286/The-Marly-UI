@@ -10,9 +10,10 @@ import Footer from '../../Components/Footer/Footer'
 import Header from '../../Components/Header/Header'
 import Best_of_Marly from '../../Components/Best_of_Marly/Best_of_Marly'
 import './Spa.css';
-import Zigzagimgright from "../../Components/Zigzagimg/Zigzagimgright";
 import Zifzagleft from "../../Components/Zigzag/Zifzagleft";
 import SectionHero from "../../Components/SectionHero/SectionHero";
+import Zigzagimgleft from "../../Components/Zigzagimg/Zigzagimgleft";
+import Carousel from 'react-bootstrap/Carousel';
 
 const Spa = () => {
 
@@ -27,12 +28,14 @@ const Spa = () => {
           title={'Relax at the Marly Spa'}
           descrption={"Escape the bustling city and reset your body and mind at The Marly Spa in style."}
         />
-        <Zigzagimgright
+        <Zigzagimgleft
           title={'Classic Sea Facing Room'}
           descrption={"Enjoy the comfort of our 35m² Classic Sea Facing Room featuring a spacious bedroom with lounge area, en-suite bathroom and a 10m² balcony with sea views. Equipped with Smart TV, Marshall speaker, Nespresso coffee machine and minibar."}
           btn1={'Explore'}
+          isSectionBtn={true}
           btn2={'Book Your Stay'}
           image={"../../image/Spa Page/Marly_Spa_1.jpg"}
+          isOrder={true}
         />
         <Zifzagleft
           image={"../../image/Spa Page/Marly_Spa_2.jpg"}
@@ -41,7 +44,7 @@ const Spa = () => {
           btn1={'Explore'}
           btn2={'Book Your Stay'}
         />
-        <section className='common mt-180'>
+        <section className='common'>
           <div className='row'>
             <div className="col-sm-12 pt-100">
               <h1 className='mb-70 d-flex justify-content-center text-center'>Your sanctuary for self-care and wellbeing</h1>
@@ -121,42 +124,35 @@ const Spa = () => {
                 </Swiper>
               </div>
             </div>
-            <div className='mt-135 carousel-padding pb-0 mb-200'>
-              <div id='color-FAF8F4' carouselExampleIndicators class="carousel slide pt-72 pb-72" data-bs-ride="carousel">
-                <div class="carousel-indicators pe-200 pb-72 m-0">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner pb-38 pe-200">
-                  <div class="carousel-item active">
-                    <div className='d-flex justify-content-end text-right'>
-                      <div className='mw-770'>
-                        <h4>Hands down one of the best massages I’ve had, Zanele is a miracle worker. A must for anyone looking to relax in Camps Bay!</h4>
-                        <p>-Elana Botha</p>
-                      </div>
+            <div className='carousel-padding py-3 my-5'>
+              <Carousel id='color-FAF8F4' class="carousel pt-72 pb-72">
+                <Carousel.Item className="pb-38 pe-200">
+                  <div className='d-flex justify-content-end text-right'>
+                    <div className='mw-770'>
+                      <h4>Hands down one of the best massages I’ve had, Zanele is a miracle worker. A must for anyone looking to relax in Camps Bay!</h4>
+                      <p>-Elana Botha</p>
                     </div>
                   </div>
-                  <div class="carousel-item">
-                    <div className='d-flex justify-content-end text-right'>
-                      <div className='mw-770'>
-                        <h4>Hands down one of the best massages I’ve had, Zanele is a miracle worker. A must for anyone looking to relax in Camps Bay!</h4>
-                        <p>-Elana Botha</p>
-                      </div>
+                </Carousel.Item>
+                <Carousel.Item className="pb-38 pe-200">
+                  <div className='d-flex justify-content-end text-right'>
+                    <div className='mw-770'>
+                      <h4>Hands down one of the best massages I’ve had, Zanele is a miracle worker. A must for anyone looking to relax in Camps Bay!</h4>
+                      <p>-Elana Botha</p>
                     </div>
                   </div>
-                  <div class="carousel-item">
-                    <div className='d-flex justify-content-end text-right'>
-                      <div className='mw-770'>
-                        <h4>Hands down one of the best massages I’ve had, Zanele is a miracle worker. A must for anyone looking to relax in Camps Bay!</h4>
-                        <p>-Elana Botha</p>
-                      </div>
+                </Carousel.Item>
+                <Carousel.Item className="pb-38 pe-200">
+                  <div className='d-flex justify-content-end text-right'>
+                    <div className='mw-770'>
+                      <h4>Hands down one of the best massages I’ve had, Zanele is a miracle worker. A must for anyone looking to relax in Camps Bay!</h4>
+                      <p>-Elana Botha</p>
                     </div>
                   </div>
-                </div>
-              </div>
+                </Carousel.Item>
+              </Carousel>
             </div>
-            <div className='carousel-padding mw-968 mb-189'>
+            <div className='carousel-padding mw-968'>
               <h1>Book your Marly Spa experience</h1>
               <p className='text-black-50 m-0 text-start'>Select an option below to make a booking:</p>
               <div className='mt-5'>

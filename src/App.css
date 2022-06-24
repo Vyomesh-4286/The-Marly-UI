@@ -7,6 +7,10 @@ h6 {
   font-family: 'Gilroy';
 }
 
+a:hover{
+  opacity: 0.3;
+}
+
 p,
 .manu_title,
 footer ul li {
@@ -20,6 +24,7 @@ footer ul li {
   margin: 0;
   margin-top: 80px;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .text-left {

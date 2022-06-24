@@ -1,0 +1,11 @@
+.mw-391 a{
+    color: #838383;
+}
+
+.img_anchor:hover{
+    opacity: 0.7 !important;
+}
+
+.btn_hide .img-hide{
+    display: none;
+}

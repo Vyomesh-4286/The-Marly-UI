@@ -12,6 +12,7 @@
     background: url('../../../public/image/Header/Offcanvas/svg/Close_button.svg') !important;
     width: 25px;
     height: 24px;
+    z-index: 1;
 }
 
 #color-F7F7F7 {
@@ -28,57 +29,66 @@
     margin-bottom: 72px;
 }
 
-.mt-132 {
-    margin-top: 132px;
+.mb-30 {
+    margin-bottom: 30px;
 }
 
-.mb-114 {
-    margin-bottom: 114px;
-}
-
-.ms-87 {
-    margin-left: 87px;
-}
-
-.mt-132 ul li {
+.content_spacing ul li,
+.show_link li {
     font-family: 'Century Gothic';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
     color: #3A3A3A;
+    letter-spacing: 0.05em;
 
     padding-top: 11px;
     padding-bottom: 11px;
 }
 
-.mb-69 {
-    margin-bottom: 69px;
+.show_link li {
+    font-size: 22px !important;
+    line-height: 24px !important;
+    text-transform: none !important;
+}
+
+.content_spacing ul li {
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.content_spacing ul li a {
+    color: #3A3A3A;
 }
 
 /* OffCanvasTwo */
 
-.offcanvastwo .btn-close, #close_btn {
+.offcanvastwo .btn-close,
+#close_btn {
     position: absolute;
     top: 79px;
     right: 79px !important;
+    z-index: 1;
 }
 
 .offcanvastwo .btn-close {
     background: none;
     width: 126px;
     height: 20px;
+    z-index: 1;
 }
 
-#close_btn{
-    background-color: rgba(229, 229, 229, 0.5) !important;
+#close_btn {
     width: 126px;
     margin-top: -8px;
 }
 
-.offcanvas_booking_btn{
+#close_btn,
+.offcanvastwo_booking {
+    background-color: rgba(229, 229, 229, 0.5) !important;
+}
+
+.offcanvas_booking_btn {
     position: absolute !important;
     top: 78px;
     right: 78px;
@@ -88,15 +98,68 @@
     margin-top: 188px;
 }
 
-.me-79 {
-    margin-right: 79px;
+.me-55 {
+    margin-right: 55px;
 }
 
-.mw-449 {
-    max-width: 449px !important;
+@media (min-width:768px) {
+    .content_spacing {
+        margin-top: 126px;
+        margin-bottom: 1rem;
+        margin-left: 87px;
+    }
+
+    .md\:mb-5 {
+        margin-bottom: 3rem !important;
+    }
+
+    .md\:pb-5 {
+        padding-bottom: 3rem !important;
+    }
+
+    .mw-449 {
+        max-width: 29.23vw !important;
+    }
+
+    .md\:order-2 {
+        order: 2;
+    }
+
+    .show_link {
+        display: none;
+    }
+
+    .hide_nav {
+        display: flex;
+    }
 }
 
-.mw-449 h1 {
+@media (max-width:767.98px) {
+    .content_spacing {
+        margin-top: 55px;
+        margin-bottom: 1rem;
+    }
+
+    .md\:mw-449 {
+        max-width: 449px;
+    }
+
+    .show_img,
+    .show_link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .md\:text-center {
+        text-align: center;
+    }
+
+    .hide_nav {
+        display: none;
+    }
+}
+
+.content h1 {
     font-style: normal;
     font-weight: 300;
     font-size: 40px;
@@ -105,7 +168,7 @@
     color: #3A3A3A;
 }
 
-.mw-449 p {
+.content p {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -117,10 +180,22 @@
     max-width: 327px;
 }
 
-.mw-449 hr {
-    width: 449px;
+.mb-76 {
+    margin-bottom: 76px;
 }
 
-.mb-76{
-    margin-bottom: 76px;
+.bg_offcancastwo {
+    background: url('../../../public/image/Header/Offcanvas/OffcanvasOne.jpg');
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.nav_menu_offcanvas_positon li {
+    font-family: 'Century Gothic';
+    font-size: 60px;
+}
+
+.nav_menu_offcanvas_positon li a {
+    color: #fff;
 }

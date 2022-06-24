@@ -12,7 +12,7 @@ const Page404 = () => {
           image={"../../image/404 Page/Marly_404.jpg"}
           title={'404'}
           descrption={"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."}
-          btn={'BACK TO HOME'}
+          isSectionBtn={true}
         />
       </main>
       <Footer />

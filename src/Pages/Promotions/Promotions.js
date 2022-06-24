@@ -8,8 +8,8 @@ import Best_of_Marly from '../../Components/Best_of_Marly/Best_of_Marly'
 import Explore_rooms from '../../Components/Explore_rooms/Explore_rooms'
 import './Promotions.css';
 import ImgGrid from '../../Components/ImgGrid/ImgGrid';
-import Zigzagimgright from '../../Components/Zigzagimg/Zigzagimgright';
 import SectionHero from '../../Components/SectionHero/SectionHero';
+import Zigzagimgleft from '../../Components/Zigzagimg/Zigzagimgleft';
 
 const Promotions = () => {
     return (
@@ -21,15 +21,14 @@ const Promotions = () => {
                     title={'Promotions at The Marly'}
                     descrption={"Make your stay at The Marly a little sweeter with our bespoke special offers"}
                 />
-                <div className='mb-200'>
-                    <Zigzagimgright
-                        title={'Discover our current luxury offerings'}
-                        descrption={"Take advantage of our seasonal offers to experience The Marly lifestyle for yourself. Curated with the finest attention to detail, our special offers includes discounted rates on accommodation and exceptional value adds, on us."}
-                        btn1={'MAKE A BOOKING'}
-                        image={"../../image/Offers Page/Marly_Offers_1.jpg"}
-                    />
-                </div>
-                <section className='common mt-0 carousel-padding pb-0 offer_imggrid'>
+                <Zigzagimgleft
+                    title={'Discover our current luxury offerings'}
+                    descrption={"Take advantage of our seasonal offers to experience The Marly lifestyle for yourself. Curated with the finest attention to detail, our special offers includes discounted rates on accommodation and exceptional value adds, on us."}
+                    btn1={'MAKE A BOOKING'}
+                    image={"../../image/Offers Page/Marly_Offers_1.jpg"}
+                    isOrder={true}
+                />
+                <section className='common carousel-padding pb-0 offer_imggrid'>
                     <Tabs
                         defaultActiveKey="home"
                         id="noanim-tab-example"
